@@ -9,3 +9,4 @@ insecure
 preserve-inputs
 bootstrap-3
 iron-router
+spin
