@@ -1,2 +1,3 @@
+- the page templates should be named xx_page
 - produtores
 - backoffice
