@@ -1,2 +1,4 @@
-- produtores
 - backoffice
+- permitir que os produtores tenham várias fotos
+- ter campos para onde e quando
+- descrição dos produtores em markdown?
