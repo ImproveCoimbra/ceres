@@ -1,3 +1,7 @@
-.mastfoot .heart {
+.footer .heart {
 	color: red;
+}
+
+.footer {
+	text-align: center;
 }

@@ -1,29 +1,9 @@
 <template name="layout">
-<div class="site-wrapper">
+<div class="container">
+  {{> header}}
 
-    <div class="site-wrapper-inner">
+  {{yield}}
 
-      <div class="cover-container">
-
-        <div class="masthead clearfix">
-          <div class="inner">
-            {{> header}}
-          </div>
-        </div>
-
-        <div class="inner cover">
-          {{yield}}
-        </div>
-
-        <div class="mastfoot">
-          <div class="inner">
-            {{> footer}}
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
+  {{> footer}}
 </div>
 </template>
