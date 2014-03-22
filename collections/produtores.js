@@ -1,0 +1,1 @@
+Produtores = new Meteor.Collection('produtores');
