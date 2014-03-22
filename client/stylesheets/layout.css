@@ -9,3 +9,13 @@
 .spinner-container {
 	min-height: 100px;
 }
+
+.produtor-page-head-image {
+	max-height: 300px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.produtor_page_head_image {
+	width: 700px;
+}
