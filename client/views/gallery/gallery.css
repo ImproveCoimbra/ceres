@@ -1,0 +1,13 @@
+.gallery-item {
+	width: 40px;
+	max-height: 40px;
+	cursor: pointer;
+}
+
+.gallery-item img {
+	width: 40px;
+}
+
+.gallery .modal img {
+	max-width: 558px;
+}
