@@ -15,5 +15,13 @@ Template.adminProdutorForm.events({
 	    }
 
 	    Router.go('adminPage');
+	},
+	'click .js-delete': function(ev) {
+	    ev.preventDefault();
+
+	    if (confirm("Apagar este produtor?")) {
+	      Produtores.remove(this._id);
+	      Router.go('adminPage');
+	    }
 	}
 })

@@ -22,6 +22,15 @@
 	    </div>
 	  </div>
 
+	  {{#if _id}}
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label">Apagar</label>
+	    <div class="col-sm-10">
+	      <button type="button" class="btn btn-danger js-delete"><span class="glyphicon glyphicon-remove"></span> Apagar Produtor</button>
+	    </div>
+	  </div>
+	  {{/if}}
+
 	  <div class="form-group">
 	    <div class="col-sm-offset-2 col-sm-10">
 	      <button type="submit" class="btn btn-default">Guardar</button>
