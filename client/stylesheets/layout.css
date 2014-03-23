@@ -19,3 +19,11 @@
 .produtor_page_head_image {
 	width: 700px;
 }
+
+.produtores-list-item {
+	width: 200px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+	margin-left: 15px;
+}
