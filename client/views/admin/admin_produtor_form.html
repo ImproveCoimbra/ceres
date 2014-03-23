@@ -22,8 +22,30 @@
 	    </div>
 	  </div>
 
+	  {{#if photos}}	
+	  <div class="form-group admin-produtores-edit-photos">
+	    <label class="col-sm-2 control-label">Fotos</label>
+	    <div class="col-sm-10">
+	      <ul class="list-unstyled">
+			{{#each photos}}
+		      <li>
+				<img src="{{url}}" alt="Foto" class="img-thumbnail">
+				<button type="button" class="btn btn-danger btn-xs admin-delete-photo-btn js-delete-photo">
+					<span class="glyphicon glyphicon-remove"></span>
+				</button>
+		      </li>
+		    {{/each}}
+	      </ul>
+
+	      <button type="button" class="btn btn-success btn-xs js-add-photo">
+			<span class="glyphicon glyphicon-plus"> Adicionar Foto</span>
+		  </button>
+	    </div>
+	  </div>
+	  {{/if}}
+
 	  {{#if _id}}
-	  <div class="form-group">
+	  <div class="form-group admin-remove-produtor bg-danger">
 	    <label class="col-sm-2 control-label">Apagar</label>
 	    <div class="col-sm-10">
 	      <button type="button" class="btn btn-danger js-delete"><span class="glyphicon glyphicon-remove"></span> Apagar Produtor</button>
