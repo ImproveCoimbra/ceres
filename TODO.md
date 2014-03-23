@@ -2,4 +2,3 @@
 - ter campos para onde e quando
 - descrição dos produtores em markdown?
 - melhorar a galeria (e talvez publicá-la numa package?)
-- mudar as photos para poderem ter mais atributos
