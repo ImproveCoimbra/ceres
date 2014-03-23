@@ -1,4 +1,4 @@
-Template.adminProdutoresEditItem.events({
+Template.adminProdutorForm.events({
 	"submit form" : function (ev) {
 		ev.preventDefault();
 
@@ -11,7 +11,7 @@ Template.adminProdutoresEditItem.events({
 	    if (this._id) {
 	    	Produtores.update(this._id, {$set : produtor});
 	    } else {
-	    	//TODO: imeplement adding
+	    	Produtores.insert(produtor);
 	    }
 
 	    Router.go('adminPage');
