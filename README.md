@@ -3,7 +3,7 @@
 ##Project Status
 Very much a WIP. 
 
-You can acess the development version of the site at [ceres.meteor.com/](http://ceres.meteor.com/).
+You can acess the development version of the site at [ceres.meteor.com](http://ceres.meteor.com/).
 
 For testing porpuses the admin credentials are:
 - email `me@lfac.me`
