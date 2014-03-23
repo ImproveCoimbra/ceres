@@ -1,4 +1,3 @@
-- backoffice
 - login no backoffice
 - ter campos para onde e quando
 - ter campos para contactos dos produtores? tel, email, facebook?

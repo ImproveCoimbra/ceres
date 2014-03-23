@@ -26,20 +26,23 @@
 	  <div class="form-group admin-produtores-edit-photos">
 	    <label class="col-sm-2 control-label">Fotos</label>
 	    <div class="col-sm-10">
-	      <ul class="list-unstyled">
+	      <div class="admin-produtores-edit-photos-list">
 			{{#each photos}}
-		      <li>
+		      <span class="admin-produtores-edit-photos-item">
 				<img src="{{url}}" alt="Foto" class="img-thumbnail">
 				<button type="button" class="btn btn-danger btn-xs admin-delete-photo-btn js-delete-photo">
 					<span class="glyphicon glyphicon-remove"></span>
 				</button>
-		      </li>
+		      </span>
 		    {{/each}}
-	      </ul>
+	      </div>
 
-	      <button type="button" class="btn btn-success btn-xs js-add-photo">
-			<span class="glyphicon glyphicon-plus"> Adicionar Foto</span>
-		  </button>
+	      	<div class="input-group">
+		      <span class="input-group-btn">
+		        <button class="btn btn-success js-add-photo" type="button"><span class="glyphicon glyphicon-plus"></span></button>
+		      </span>
+		      <input name="newPhotoUrl" type="url" class="form-control" placeholder="Url">
+		    </div><!-- /input-group -->
 	    </div>
 	  </div>
 	  {{/if}}

@@ -1,7 +1,13 @@
-.admin-produtores-edit-photos li {
+.admin-produtores-edit-photos-item {
 	width: 100px;
 	position: relative;
-	margin-bottom: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.admin-produtores-edit-photos-list {
+	margin-bottom: 15px;
 }
 
 .admin-delete-photo-btn {
