@@ -1,4 +1,6 @@
 - backoffice
 - ter campos para onde e quando
 - descrição dos produtores em markdown?
+- ter uma cena de pesquisa?
+- usar uma session variable na galeria para mostrar a imagem atual (e mudar)
 - melhorar a galeria (e talvez publicá-la numa package?)

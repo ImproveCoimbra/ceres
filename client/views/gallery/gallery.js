@@ -5,7 +5,7 @@ Template.galleryItem.events({
 		galleryItem = $(ev.currentTarget);
 
 		galleryModalElement = galleryItem.closest(".gallery").find(".gallery-modal");
-		galleryModalElement.find(".modal-body").html('<img src="' + galleryItem.find("img").attr("src") + '">');
+		galleryModalElement.find(".modal-body").html('<img src="' + this.url + '">');
 		galleryModalElement.modal();
 	}
 })
