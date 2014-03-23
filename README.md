@@ -1,4 +1,4 @@
-#Projecto Ceres - Onde Encontrar Alimentos Biológicos em Coimbra
+#Projecto Ceres - Saiba Onde Encontrar Alimentos Biológicos em Coimbra
 
 ##Project Status
 Very much a WIP
