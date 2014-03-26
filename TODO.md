@@ -1,3 +1,6 @@
+- fazer logging das alterações para uma tabela de changes
+- arranjar uma ninjisse qualquer para os dados dos produtores irem logo no primeiro html
+
 - ter campos para onde e quando
 - ter campos para contactos dos produtores? tel, email, facebook?
 - descrição dos produtores em markdown?
