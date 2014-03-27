@@ -13,3 +13,6 @@ Produtores.allow({
   	return !! userId;
   }
 });
+if (Meteor.isServer) {
+  logOperationsOf(Produtores);
+}
