@@ -9,6 +9,9 @@ For testing porpuses the admin credentials are:
 - email `me@lfac.me`
 - passowrd `test123`
 
+##Acessing Our Data
+- The data is available in JSON via the endpoint `/json/produtores`
+
 ##Setting up the development environment
 Plese note that currently Meteor doesn't oficially support Windows.
 
