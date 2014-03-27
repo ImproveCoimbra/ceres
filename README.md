@@ -10,7 +10,7 @@ For testing porpuses the admin credentials are:
 - passowrd `test123`
 
 ##Acessing Our Data
-- The data is available in JSON via the endpoint `/json/produtores`
+The data is available in JSON via the endpoint `/json/produtores` ([check it](http://ceres.meteor.com/json/produtores) out in our test instance).
 
 ##Setting up the development environment
 Plese note that currently Meteor doesn't oficially support Windows.
