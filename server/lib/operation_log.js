@@ -24,3 +24,6 @@ logOperationsOf = function (collection) {
 	    remove : _.partial(logOperation, collection._name, "remove")
 	  });
 };
+getHistoryEntries = function () {
+    return OperationLog.find({}, {limit: 100}).fetch();
+};
