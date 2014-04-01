@@ -8,6 +8,7 @@
 	- agricultores
 	- restauração (incluindo take aways)
 - descrição dos produtores em markdown?
+- ter uma forma integrada de dar feedback
 
 ##Techical
 - arranjar uma ninjisse qualquer para os dados dos produtores irem logo no primeiro html
