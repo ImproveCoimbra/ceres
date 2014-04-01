@@ -1,8 +1,13 @@
 ##Features
 - ter campos para onde e quando
+	- link para o google maps, e label da morada e horário
 - ter campos para contactos dos produtores? tel, email, facebook?
-- descrição dos produtores em markdown?
 - ter uma cena de pesquisa?
+- Categorias:
+	- lojas e mercados
+	- agricultores
+	- restauração (incluindo take aways)
+- descrição dos produtores em markdown?
 
 ##Techical
 - arranjar uma ninjisse qualquer para os dados dos produtores irem logo no primeiro html
