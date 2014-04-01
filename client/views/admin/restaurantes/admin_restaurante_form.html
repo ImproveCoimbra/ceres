@@ -1,0 +1,69 @@
+<template name="adminRestauranteForm">
+	<form class="form-horizontal" role="form">
+	  <div class="form-group">
+	    <label for="inputName" class="col-sm-2 control-label">Nome</label>
+	    <div class="col-sm-10">
+	      <input name="name" type="text" class="form-control" id="inputName" placeholder="Nome" value="{{name}}">
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label for="inputMainPhotoUrl" class="col-sm-2 control-label">Url Foto de Capa</label>
+	    <div class="col-sm-10">
+	      <input name="mainPhotoUrl" type="url" class="form-control" id="inputMainPhotoUrl" placeholder="Nome" value="{{mainPhotoUrl}}">
+	      <span class="help-block">A imagem deve ter 700px de largura e 300px de altura.</span>
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label for="inputDescription" class="col-sm-2 control-label">Descrição</label>
+	    <div class="col-sm-10">
+	      <textarea name="description" id="inputDescription" class="form-control" rows="3">{{description}}</textarea>
+	    </div>
+	  </div>
+
+	  {{#if photos}}	
+	  <div class="form-group admin-produtores-edit-photos">
+	    <label class="col-sm-2 control-label">Fotos</label>
+	    <div class="col-sm-10">
+	      <div class="admin-produtores-edit-photos-list">
+			{{#each photos}}
+		      <span class="admin-produtores-edit-photos-item">
+				<img src="{{url}}" alt="Foto" class="img-thumbnail">
+				<button type="button" class="btn btn-danger btn-xs admin-delete-photo-btn js-delete-photo">
+					<span class="glyphicon glyphicon-remove"></span>
+				</button>
+		      </span>
+		    {{/each}}
+	      </div>
+
+	      	<div class="input-group">
+		      <span class="input-group-btn">
+		        <button class="btn btn-success js-add-photo" type="button"><span class="glyphicon glyphicon-plus"></span></button>
+		      </span>
+		      <input name="newPhotoUrl" type="url" class="form-control" placeholder="Url">
+		    </div><!-- /input-group -->
+	    </div>
+	  </div>
+	  {{/if}}
+
+	  {{#if _id}}
+	  <div class="form-group admin-remove-produtor bg-danger">
+	    <label class="col-sm-2 control-label">Apagar</label>
+	    <div class="col-sm-10">
+	      <button type="button" class="btn btn-danger js-delete"><span class="glyphicon glyphicon-remove"></span> Apagar Produtor</button>
+	    </div>
+	  </div>
+	  {{/if}}
+
+	  <div class="form-group">
+	    <div class="col-sm-offset-2 col-sm-10">
+	    	<div class="btn-group">
+		      <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</button>
+
+		      <a class="btn btn-default" href="{{pathFor 'adminPage'}}"><span class="glyphicon glyphicon-chevron-left"></span> Cancelar</a>
+	      </div>
+	    </div>
+	  </div>
+	</form>
+</template>

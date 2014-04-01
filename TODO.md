@@ -3,10 +3,6 @@
 	- link para o google maps, e label da morada e horário
 - ter campos para contactos dos produtores? tel, email, facebook?
 - ter uma cena de pesquisa?
-- Categorias:
-	- lojas e mercados
-	- agricultores
-	- restauração (incluindo take aways)
 - descrição dos produtores em markdown?
 - ter uma forma integrada de dar feedback
 
