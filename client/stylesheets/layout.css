@@ -10,17 +10,17 @@
 	min-height: 100px;
 }
 
-.produtor-page-head-image {
+.resource-page-head-image {
 	max-height: 300px;
 	overflow: hidden;
 	border-radius: 5px;
 }
 
-.produtor_page_head_image {
+.resource_page_head_image {
 	width: 700px;
 }
 
-.produtores-list-item {
+.resource-list-item {
 	width: 200px;
 	display: inline-block;
 	vertical-align: top;
