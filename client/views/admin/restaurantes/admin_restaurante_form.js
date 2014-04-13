@@ -54,5 +54,5 @@ Template.adminRestauranteForm.photos = function () {
 };
 
 Template.adminRestauranteForm.created = function () {
-	Session.set("adminPhotoList", this.data.photos);
+	Session.set("adminPhotoList", this.data && this.data.photos ? this.data.photos : []);
 };

@@ -54,5 +54,5 @@ Template.adminProdutorForm.photos = function () {
 };
 
 Template.adminProdutorForm.created = function () {
-	Session.set("adminPhotoList", this.data.photos);
+	Session.set("adminPhotoList", this.data && this.data.photos ? this.data.photos : []);
 };
