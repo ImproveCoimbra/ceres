@@ -4,6 +4,7 @@
     "iron-router": {},
     "spin": {},
     "accounts-ui-bootstrap-3": {},
-    "apm": {}
+    "apm": {},
+    "fast-render": {}
   }
 }
