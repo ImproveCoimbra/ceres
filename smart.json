@@ -1,10 +1,7 @@
 {
   "packages": {
     "bootstrap-3": {},
-    "iron-router": {
-      "git": "https://github.com/EventedMind/iron-router.git",
-      "branch": "v0.6.4"
-    },
+    "iron-router": {},
     "spin": {},
     "accounts-ui-bootstrap-3": {},
     "apm": {}
