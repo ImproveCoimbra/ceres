@@ -19,6 +19,9 @@
       },
       "fast-render": {
         "version": "0.1.26"
+      },
+      "reactive-property": {
+        "version": "0.0.1"
       }
     },
     "packages": {
@@ -51,6 +54,11 @@
         "git": "https://github.com/arunoda/meteor-fast-render.git",
         "tag": "v0.1.26",
         "commit": "bfabe15c5acfbdec7c3a815b956bb49c41421ab2"
+      },
+      "reactive-property": {
+        "git": "https://github.com/CollectionFS/Meteor-reactive-property.git",
+        "tag": "v0.0.1",
+        "commit": "f742b8656bb88fafff2a9c3a32ff1f97b3ebf2f7"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

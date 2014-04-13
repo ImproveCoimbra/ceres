@@ -7,7 +7,6 @@
 - ter uma forma integrada de dar feedback
 
 ##Techical
-- arranjar uma ninjisse qualquer para os dados dos produtores irem logo no primeiro html
-- usar uma session variable na galeria para mostrar a imagem atual (e mudar)
 - error handling
+- usar uma session variable (ou new ReactiveProperty) na galeria para mostrar a imagem atual (e mudar)
 - melhorar a galeria (e talvez publicá-la numa package?)
