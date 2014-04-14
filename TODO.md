@@ -10,3 +10,4 @@
 - error handling
 - usar uma session variable (ou new ReactiveProperty) na galeria para mostrar a imagem atual (e mudar)
 - melhorar a galeria (e talvez publicá-la numa package?)
+- http://meteorhacks.com/xss-and-meteor.html
