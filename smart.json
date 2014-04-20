@@ -5,7 +5,6 @@
     "spin": {},
     "accounts-ui-bootstrap-3": {},
     "apm": {},
-    "fast-render": {},
-    "reactive-property": {}
+    "fast-render": {}
   }
 }
