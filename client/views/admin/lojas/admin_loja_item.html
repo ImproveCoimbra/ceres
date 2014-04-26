@@ -1,6 +1,13 @@
 <template name="adminLojasItem">
-	<li> 
-		<a href="{{pathFor 'adminLojasEditItem'}}"><span class="glyphicon glyphicon-pencil"></span> {{name}}</a>
-		<a href="{{pathFor 'lojaPage'}}" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+	<li class="{{#if isWaitingAproval}}text-danger{{/if}}"> 
+		<a href="{{pathFor 'adminLojasEditItem'}}" class="{{#if isWaitingAproval}}text-danger{{/if}}"><span class="glyphicon glyphicon-pencil"></span> {{name}}</a>
+		
+		<a href="{{pathFor 'lojaPage'}}" class="{{#if isWaitingAproval}}text-danger{{/if}}" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+		
+		{{#if isWaitingAproval}}
+			<span class="hint--top" data-hint="Precisa de Aprovação">
+				<span class="glyphicon glyphicon-exclamation-sign"></span>
+			</span>
+		{{/if}}
 	</li>
 </template>

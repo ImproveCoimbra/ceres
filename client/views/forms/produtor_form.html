@@ -1,4 +1,10 @@
 <template name="produtorForm">
+	{{#unless isAproved}}
+		<div class="alert alert-danger">
+			<strong>Precisa de aprovação</strong> para ficar público. Guarde este formulário para tornar público.
+		</div>
+	{{/unless}}
+
 	<form class="form-horizontal" role="form">
 	  <div class="form-group">
 	    <label for="inputName" class="col-sm-2 control-label">Nome</label>

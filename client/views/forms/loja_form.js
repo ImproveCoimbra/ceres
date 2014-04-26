@@ -26,7 +26,8 @@ Template.lojaForm.events({
         return {
           url: img.src
         };
-      })
+      }),
+      isAproved: true
     };
 
     if (currentPageIs('submitLojaPage')) {

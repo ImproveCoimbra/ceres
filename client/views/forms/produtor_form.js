@@ -26,7 +26,8 @@ Template.produtorForm.events({
         return {
           url: img.src
         };
-      })
+      }),
+      isAproved: true
     };
 
     if (currentPageIs('submitProdutorPage')) {

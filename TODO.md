@@ -10,11 +10,9 @@
 - error handling
 - usar uma session variable (ou new ReactiveProperty) na galeria para mostrar a imagem atual (e mudar)
 - melhorar a galeria (e talvez publicá-la numa package?)
+- Mostar notifications quando se guarda/submete alguma coisa
 
 ##Submit
-- Ter um método para submeter produtores, etc sugeredios que põe o isAproved=false
-- Nas listagens públicas não mostrar o não aproved e nas de admin mostrar todos (no admin os não aproved têm de estar diferentes, a vermelho ou assim)
-- Não deixar que pessoas sem login vejam os não públicos
 - Adicionar um campo de email ao form
-- Mandar as pessoas para um página de "Ok submission done" quando submetem uma cena
+- Mandar as pessoas para um página de "Ok submission done" quando submetem uma cena (pode não ser preciso?)
 - Ter uma forma de aprovar
