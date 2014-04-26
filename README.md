@@ -8,7 +8,7 @@ You can try the development version of the site at [ceres.meteor.com](http://cer
 
 For testing porpuses the admin credentials are:
 - email `me@lfac.me`
-- passowrd `test123`
+- password `test123`
 
 ##Acessing Our Data
 The data is available in JSON via the endpoint `/json/agricultores` ([check it](http://ceres.meteor.com/json/agricultores) out in our test instance).
