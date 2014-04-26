@@ -10,3 +10,11 @@
 - error handling
 - usar uma session variable (ou new ReactiveProperty) na galeria para mostrar a imagem atual (e mudar)
 - melhorar a galeria (e talvez publicá-la numa package?)
+
+##Submit
+- Criar uma página de submit e uma para cada tipo (produtor, mercado, etc)
+- Ter uma pasta só com os forms
+- Ter um método para submeter produtores, etc sugeredios que põe o isAproved=false
+- Nas listagens públicas não mostrar o não aproved e nas de admin mostrar todos (no admin os não aproved têm de estar diferentes, a vermelho ou assim)
+- Não deixar que pessoas sem login vejam os não públicos
+- Adicionar um campo de email ao form
