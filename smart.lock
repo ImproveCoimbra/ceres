@@ -2,24 +2,12 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "bootstrap-3": {
-        "version": "3.1.1-1"
-      },
-      "iron-router": {
-        "version": "0.7.1"
-      },
-      "spin": {
-        "version": "0.2.2"
-      },
-      "accounts-ui-bootstrap-3": {
-        "version": "0.3.0-1"
-      },
-      "apm": {
-        "version": "1.2.2"
-      },
-      "fast-render": {
-        "version": "0.2.3"
-      }
+      "bootstrap-3": {},
+      "iron-router": {},
+      "spin": {},
+      "accounts-ui-bootstrap-3": {},
+      "apm": {},
+      "fast-render": {}
     },
     "packages": {
       "bootstrap-3": {
