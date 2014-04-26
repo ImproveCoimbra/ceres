@@ -21,23 +21,8 @@ Template.lojaForm.events({
       })
     };
 
-    if (currentPageIs('submitLojasPgae')) {
-      // TODO Meteor call
-      Router.go('homePage');
-    } else if (currentPageIs('admninLojaCreateItem')) {
-      if (this._id) {
-        Produtores.update(this._id, {$set : produtor});
-      } else {
-        Produtores.insert(produtor);
-      }
-
-      Router.go('adminPage');
-    } else {
-      Router.go('homePage');
-    }
-
     if (currentPageIs('submitLojaPage')) {
-      //TODO Meteor call
+      Meteor.call("lojasSubmit", loja);
       Router.go('homePage');
     } else if (currentPageIs('adminLojaCreateItem')) {
       if (this._id) {
@@ -47,6 +32,8 @@ Template.lojaForm.events({
       }
 
       Router.go('adminPage');
+    } else {
+      throw new Meteor.Error(400, "Invalid route!");
     }
   },
   'click .js-delete': function(ev) {

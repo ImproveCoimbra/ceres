@@ -21,8 +21,8 @@ Template.restauranteForm.events({
       })
     };
 
-    if (currentPageIs('submitRestaurantesPage')) {
-      //TODO Meteor call
+    if (currentPageIs('submitRestaurantePage')) {
+      Meteor.call("restaurantesSubmit", restaurante);
       Router.go('homePage');
     } else if (currentPageIs('adminRestauranteCreateItem')) {
       if (this._id) {
@@ -32,6 +32,8 @@ Template.restauranteForm.events({
       }
 
       Router.go('adminPage');
+    } else {
+      throw new Meteor.Error(400, "Invalid route!");
     }
   },
   'click .js-delete': function(ev) {

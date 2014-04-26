@@ -21,8 +21,8 @@ Template.produtorForm.events({
       })
     };
 
-    if (currentPageIs('submitProdutoresPage')) {
-      // TODO Meteor call
+    if (currentPageIs('submitProdutorPage')) {
+      Meteor.call("produtoresSubmit", produtor);
       Router.go('homePage');
     } else if (currentPageIs('adminProdutorCreateItem')) {
       if (this._id) {
@@ -32,6 +32,8 @@ Template.produtorForm.events({
       }
 
       Router.go('adminPage');
+    } else {
+      throw new Meteor.Error(400, "Invalid route!");
     }
   },
   'click .js-delete': function(ev) {
