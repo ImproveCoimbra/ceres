@@ -1,3 +1,11 @@
+Template.restauranteForm.previousPage = function () {
+  if (currentPageIs('submitRestaurantePage')) {
+    return Router.path('submitPage');
+  } else {
+    return Router.path('adminPage');
+  }
+};
+
 Template.restauranteForm.events({
   "submit form" : function (ev) {
     ev.preventDefault();

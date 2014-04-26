@@ -1,3 +1,11 @@
+Template.produtorForm.previousPage = function () {
+  if (currentPageIs('submitProdutorPage')) {
+    return Router.path('submitPage');
+  } else {
+    return Router.path('adminPage');
+  }
+};
+
 Template.produtorForm.events({
   "submit form": function (ev) {
     ev.preventDefault();

@@ -1,3 +1,11 @@
+Template.lojaForm.previousPage = function () {
+  if (currentPageIs('submitLojaPage')) {
+    return Router.path('submitPage');
+  } else {
+    return Router.path('adminPage');
+  }
+};
+
 Template.lojaForm.events({
   "submit form" : function (ev) {
     ev.preventDefault();
