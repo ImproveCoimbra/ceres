@@ -15,7 +15,7 @@
         "version": "0.3.0-1"
       },
       "apm": {
-        "version": "1.0.1"
+        "version": "1.2.2"
       },
       "fast-render": {
         "version": "0.2.3"
@@ -44,8 +44,8 @@
       },
       "apm": {
         "git": "https://github.com/arunoda/meteor-apm-client.git",
-        "tag": "v1.0.1",
-        "commit": "36cbe0b0e7352c8bc4487e46bd5490b03bc8fd0e"
+        "tag": "v1.2.2",
+        "commit": "46019950b917191b78a9c81349421521ce07a932"
       },
       "fast-render": {
         "git": "https://github.com/arunoda/meteor-fast-render.git",

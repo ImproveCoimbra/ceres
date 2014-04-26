@@ -1,9 +1,9 @@
 ##Features
+- Ter uma forma de produtures/etc submeterem os seus dados e nós aprovar-mos
 - ter campos para onde e quando
 	- link para o google maps, e label da morada e horário
 - ter campos para contactos dos produtores? tel, email, facebook?
 - ter uma cena de pesquisa?
-- descrição dos produtores em markdown?
 - ter uma forma integrada de dar feedback
 
 ##Techical
