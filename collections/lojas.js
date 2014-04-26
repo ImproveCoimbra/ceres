@@ -6,9 +6,7 @@ Meteor.methods({
 	  if (!Meteor.isServer) {
   		return;
   	  }
-	  console.log("bob start");
 	  attributes.isAproved = false;
 	  Lojas.insert(attributes);
-	  console.log("bob");
   }
 });

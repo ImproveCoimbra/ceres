@@ -6,6 +6,14 @@ Template.restauranteForm.previousPage = function () {
   }
 };
 
+Template.restauranteForm.saveButtonLabel = function () {
+  if (currentPageIs('submitRestaurantePage')) {
+    return 'Submeter';
+  } else {
+    return 'Guardar';
+  }
+};
+
 Template.restauranteForm.events({
   "submit form" : function (ev) {
     ev.preventDefault();

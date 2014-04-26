@@ -6,6 +6,14 @@ Template.lojaForm.previousPage = function () {
   }
 };
 
+Template.lojaForm.saveButtonLabel = function () {
+  if (currentPageIs('submitLojaPage')) {
+    return 'Submeter';
+  } else {
+    return 'Guardar';
+  }
+};
+
 Template.lojaForm.events({
   "submit form" : function (ev) {
     ev.preventDefault();

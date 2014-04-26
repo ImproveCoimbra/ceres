@@ -6,6 +6,14 @@ Template.produtorForm.previousPage = function () {
   }
 };
 
+Template.produtorForm.saveButtonLabel = function () {
+  if (currentPageIs('submitProdutorPage')) {
+    return 'Submeter';
+  } else {
+    return 'Guardar';
+  }
+};
+
 Template.produtorForm.events({
   "submit form": function (ev) {
     ev.preventDefault();
