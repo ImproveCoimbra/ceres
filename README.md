@@ -1,9 +1,10 @@
-#Projecto Ceres - Saiba onde encontrar produtos agricolas biológicos em Coimbra
+#Projecto Ceres
+Saiba onde encontrar produtos agricolas biológicos em Coimbra.
 
 ##Project Status
-Very much a WIP. 
+Very much a WIP.
 
-You can acess the development version of the site at [ceres.meteor.com](http://ceres.meteor.com/).
+You can try the development version of the site at [ceres.meteor.com](http://ceres.meteor.com/).
 
 For testing porpuses the admin credentials are:
 - email `me@lfac.me`
@@ -13,12 +14,12 @@ For testing porpuses the admin credentials are:
 The data is available in JSON via the endpoint `/json/agricultores` ([check it](http://ceres.meteor.com/json/agricultores) out in our test instance).
 
 ##Setting up the development environment
-Plese note that currently Meteor doesn't oficially support Windows.
+Plese note that Meteor isn't currently oficially support Windows.
 
 - Install [Node](http://nodejs.org/)
 - Install [Meteor](http://meteor.com/)
 - Install [Meteorite](https://atmosphere.meteor.com/wtf/app)
-- Execute `meteor`
+- Execute `mrt`
 
-##Licence
-The code in this repo is under MIT licence.
+##Licensee
+The code in this repository is licensed under the MIT licence.
