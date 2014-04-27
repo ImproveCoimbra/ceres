@@ -17,3 +17,4 @@
 - Adicionar um campo de email ao form
 - Mandar as pessoas para um página de "Ok submission done" quando submetem uma cena (pode não ser preciso?)
 - Ter uma forma de aprovar (talvez através de uma flag quando se está a editar?)
+- Ter validações na submissão de cenas

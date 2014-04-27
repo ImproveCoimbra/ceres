@@ -27,6 +27,7 @@ Template.produtorForm.events({
           url: img.src
         };
       }),
+      email: $(ev.target).find('[name=email]').val(),
       isAproved: true
     };
 
