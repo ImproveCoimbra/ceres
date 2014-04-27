@@ -22,4 +22,4 @@ Plese note that Meteor isn't currently (officially) supported on Windows.
 - Execute `mrt`
 
 ##Licensee
-The code in this repository is licensed under the MIT licence.
+The code in this repository is licensed under the MIT license.
