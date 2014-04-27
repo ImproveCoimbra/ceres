@@ -1,3 +1,5 @@
+- Move this todo to github issues!
+
 ##Features
 - ter campos para onde e quando
 - link para o google maps, e label da morada e horário
@@ -14,4 +16,4 @@
 ##Submit
 - Adicionar um campo de email ao form
 - Mandar as pessoas para um página de "Ok submission done" quando submetem uma cena (pode não ser preciso?)
-- Ter uma forma de aprovar
+- Ter uma forma de aprovar (talvez através de uma flag quando se está a editar?)
