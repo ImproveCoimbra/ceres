@@ -21,5 +21,5 @@ Plese note that Meteor isn't currently (officially) supported on Windows.
 - Install [Meteorite](https://atmosphere.meteor.com/wtf/app)
 - Execute `mrt`
 
-##Licensee
+##License
 The code in this repository is licensed under the MIT license.
