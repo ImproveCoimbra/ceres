@@ -1,7 +1,10 @@
 <template name="produtoresItem">
   <div class="resource-list-item">
     <div class="thumbnail">
-      <img src="{{mainPhotoUrl}}" alt="Foto de {{name}}">
+      <a href="{{pathFor 'produtorPage'}}">
+        <img src="{{mainPhotoUrl}}" alt="Foto de {{name}}" class="list-img">
+      </a>
+      
       <div class="caption">
         <h3><a href="{{pathFor 'produtorPage'}}">{{name}}</a></h3>
         <p>{{description}}</p>
