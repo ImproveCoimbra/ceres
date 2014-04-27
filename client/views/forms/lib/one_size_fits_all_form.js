@@ -1,24 +1,28 @@
-Template.restauranteForm.previousPage = function () {
-  if (currentPageIs('submitRestaurantePage')) {
+Template.oneSizeFitsAllForm.previousPage = function () {
+  if (currentPageIs(this.submitRouteName)) {
     return Router.path('submitPage');
   } else {
     return Router.path('adminPage');
   }
 };
 
-Template.restauranteForm.saveButtonLabel = function () {
-  if (currentPageIs('submitRestaurantePage')) {
+Template.oneSizeFitsAllForm.isOnSubmitPage = function () {
+  return currentPageIs(this.submitRouteName);
+};
+
+Template.oneSizeFitsAllForm.saveButtonLabel = function () {
+  if (currentPageIs(this.submitRouteName)) {
     return 'Submeter';
   } else {
     return 'Guardar';
   }
 };
 
-Template.restauranteForm.events({
+Template.oneSizeFitsAllForm.events({
   "submit form" : function (ev) {
     ev.preventDefault();
 
-    var restaurante = {
+    var thing = {
       name: $(ev.target).find('[name=name]').val(),
       mainPhotoUrl: $(ev.target).find('[name=mainPhotoUrl]').val(),
       description: $(ev.target).find('[name=description]').val(),
@@ -31,26 +35,24 @@ Template.restauranteForm.events({
       isAproved: true
     };
 
-    if (currentPageIs('submitRestaurantePage')) {
-      Meteor.call("restaurantesSubmit", restaurante);
+    if (currentPageIs(this.submitRouteName)) {
+      Meteor.call(this.submitMethod, thing);
       Router.go('homePage');
-    } else if (currentPageIs('adminRestauranteCreateItem')) {
+    } else {
       if (this._id) {
-        Restaurantes.update(this._id, {$set : restaurante});
+        this.collection.update(this._id, {$set : thing});
       } else {
-        Restaurantes.insert(restaurante);
+        this.collection.insert(thing);
       }
 
       Router.go('adminPage');
-    } else {
-      throw new Meteor.Error(400, "Invalid route!");
     }
   },
   'click .js-delete': function(ev) {
     ev.preventDefault();
 
-    if (confirm("Apagar este restaurante?")) {
-      Restaurantes.remove(this._id);
+    if (confirm("Apagar esta " + this.typeLabel + "?")) {
+      this.collection.remove(this._id);
       Router.go('adminPage');
     }
   },
@@ -74,10 +76,10 @@ Template.restauranteForm.events({
   }
 });
 
-Template.restauranteForm.photos = function () {
+Template.oneSizeFitsAllForm.photos = function () {
   return Session.get("adminPhotoList");
 };
 
-Template.restauranteForm.created = function () {
+Template.oneSizeFitsAllForm.created = function () {
   Session.set("adminPhotoList", this.data && this.data.photos ? this.data.photos : []);
 };
