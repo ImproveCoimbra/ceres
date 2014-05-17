@@ -6,7 +6,11 @@ Meteor.methods({
   	if (!Meteor.isServer) {
   		return;
   	}
-	attributes.isAproved = false;
-	Restaurantes.insert(attributes);
+  	attributes.isAproved = false;
+  	Restaurantes.insert(attributes, function (error, _id) {
+      if (!error) {
+        notifySubmission("restaurantes", attributes, "adminRestaurantesEditItem", _id);
+      }
+    });
   }
 });

@@ -5,8 +5,12 @@ Meteor.methods({
 	lojasSubmit : function (attributes) {
 	  if (!Meteor.isServer) {
   		return;
-  	  }
+  	}
 	  attributes.isAproved = false;
-	  Lojas.insert(attributes);
+	  Lojas.insert(attributes, function (error, _id) {
+      if (!error) {
+        notifySubmission("lojas e mercados", attributes, "adminLojasEditItem", _id);
+      }
+    });
   }
 });

@@ -5,8 +5,12 @@ Meteor.methods({
 	produtoresSubmit : function (attributes) {
 	  if (!Meteor.isServer) {
   	 	return;
-  	  }
+  	}
 	  attributes.isAproved = false;
-	  Produtores.insert(attributes);
+	  Produtores.insert(attributes, function (error, _id) {
+      if (!error) {
+        notifySubmission("agricultores", attributes, "adminProdutoresEditItem", _id);
+      }
+    });
   }
 });
