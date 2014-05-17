@@ -36,13 +36,31 @@ Template.oneSizeFitsAllForm.events({
     };
 
     if (currentPageIs(this.submitRouteName)) {
-      Meteor.call(this.submitMethod, thing);
+      Meteor.call(this.submitMethod, thing, function (error) {
+          if (error) {
+            Toasts.throwError(error.message)
+          } else {
+            Toasts.greatSuccess(thing.name + " submetido com sucesso e espera agora aprovação.");
+          }
+        });
       Router.go('homePage');
     } else {
       if (this._id) {
-        this.collection.update(this._id, {$set : thing});
+        this.collection.update(this._id, {$set : thing}, function (error) {
+          if (error) {
+            Toasts.throwError(error.message)
+          } else {
+            Toasts.greatSuccess(thing.name + " atualizado com sucesso!");
+          }
+        });
       } else {
-        this.collection.insert(thing);
+        this.collection.insert(thing, function (error) {
+          if (error) {
+            Toasts.throwError(error.message)
+          } else {
+            Toasts.greatSuccess(thing.name + " inserido com sucesso!");
+          }
+        });
       }
 
       Router.go('adminPage');
