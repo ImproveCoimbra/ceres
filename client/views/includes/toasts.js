@@ -18,4 +18,5 @@ Template.toast.rendered = function() {
   Meteor.defer(function() {
     Toasts.update(toast._id, {$set: {seen: true}});
   });
+  $('html, body').animate({ scrollTop: 0 }, 'fast');
 };
