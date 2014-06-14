@@ -7,6 +7,7 @@ Toasts.TYPES = {
 };
 
 Toasts.throwError = function(message) {
+  message = message.replace("[400]", "").trim();
   Toasts.insert({message: message, seen: false, type: Toasts.TYPES.ERROR});
 };
 
