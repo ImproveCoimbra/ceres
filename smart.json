@@ -4,7 +4,7 @@
     "iron-router": {},
     "spin": {},
     "accounts-ui-bootstrap-3": {},
-    "apm": {},
-    "fast-render": {}
+    "fast-render": {},
+    "kadira": {}
   }
 }
