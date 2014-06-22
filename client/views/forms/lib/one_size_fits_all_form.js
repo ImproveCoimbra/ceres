@@ -33,9 +33,10 @@ Template.oneSizeFitsAllForm.events({
       }),
       email: $(ev.target).find('[name=email]').val(),
       isAproved: true,
+      tags: $(ev.target).find('[name=tags]').val() ? _.invoke($(ev.target).find('[name=tags]').val().split(","), "trim") : [],
       contacts: {
         email: $(ev.target).find('[name=publicEmail]').val() || undefined,
-        phone: $(ev.target).find('[name=phone]').val() ? $(ev.target).find('[name=phone]').val().split(",") : [],
+        phone: $(ev.target).find('[name=phone]').val() ? _.invoke($(ev.target).find('[name=phone]').val().split(","), "trim") : [],
         site: $(ev.target).find('[name=site]').val() || undefined
       }
     };
