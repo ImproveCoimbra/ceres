@@ -1,0 +1,48 @@
+<template name="contactInfo">
+<ul class="media-list contact-info">
+  
+  {{#if contacts.phone}}
+  <li class="media">
+    <span class="pull-left">
+      <span class="glyphicon glyphicon-earphone media-object"></span>  
+    </span>
+    
+    <div class="media-body">
+      <h4 class="media-heading">Contacto Telefónico</h4>
+      {{#each contacts.phone}}
+        <span>{{this}}</span> |
+      {{/each}}
+    </div>
+  </li>
+  {{/if}}
+
+
+  {{#if contacts.email}}
+  <li class="media">
+    <span class="pull-left">
+      <span class="glyphicon glyphicon-inbox media-object"></span>  
+    </span>
+    
+    <div class="media-body">
+      <h4 class="media-heading">Email</h4>
+      {{contacts.email}}
+    </div>
+  </li>
+  {{/if}}
+
+
+  {{#if contacts.site}}
+  <li class="media">
+    <span class="pull-left">
+      <span class="glyphicon glyphicon-globe media-object"></span>  
+    </span>
+    
+    <div class="media-body">
+      <h4 class="media-heading">Website</h4>
+      {{contacts.site}}
+    </div>
+  </li>
+  {{/if}}
+
+</ul>
+</template>
