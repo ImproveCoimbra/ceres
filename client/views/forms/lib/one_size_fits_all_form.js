@@ -32,7 +32,12 @@ Template.oneSizeFitsAllForm.events({
         };
       }),
       email: $(ev.target).find('[name=email]').val(),
-      isAproved: true
+      isAproved: true,
+      contacts: {
+        email: $(ev.target).find('[name=publicEmail]').val() || undefined,
+        phone: $(ev.target).find('[name=phone]').val() ? $(ev.target).find('[name=phone]').val().split(",") : [],
+        site: $(ev.target).find('[name=site]').val() || undefined
+      }
     };
 
     if (currentPageIs(this.submitRouteName)) {
