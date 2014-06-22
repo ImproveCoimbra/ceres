@@ -27,3 +27,12 @@
 	margin-right: 15px;
 	margin-left: 15px;
 }
+
+.description-pre {
+  color: rgb(51, 51, 51);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+}
