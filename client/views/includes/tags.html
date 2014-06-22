@@ -1,5 +1,9 @@
 <template name="tags">
 {{#if tags}}
-
+  <h4>
+    {{#each tags}}
+      <span class="label label-info">{{this}}</span>
+    {{/each}}
+  </h4>
 {{/if}}
 </template>
