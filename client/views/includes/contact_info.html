@@ -10,7 +10,7 @@
     <div class="media-body">
       <h4 class="media-heading">Contacto Telefónico</h4>
       {{#each contacts.phone}}
-        <span><a href="tel:{{this}}">{{this}}</a></span> 
+        <span><a target="_blank" href="tel:{{this}}">{{this}}</a></span> 
       {{/each}}
     </div>
   </li>
@@ -25,7 +25,7 @@
     
     <div class="media-body">
       <h4 class="media-heading">Email</h4>
-      <a href="mailto:{{contacts.email}}">{{contacts.email}}</a>
+      <a target="_blank" href="mailto:{{contacts.email}}">{{contacts.email}}</a>
     </div>
   </li>
   {{/if}}
@@ -39,7 +39,7 @@
     
     <div class="media-body">
       <h4 class="media-heading">Website</h4>
-      <a href="{{contacts.site}}">{{contacts.site}}</a>
+      <a target="_blank" href="{{contacts.site}}">{{contacts.site}}</a>
     </div>
   </li>
   {{/if}}
