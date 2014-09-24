@@ -4,11 +4,12 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-bootstrap-3
-iron-router
-spin
+mrt:bootstrap-3@=3.1.1-1
+sacha:spin@=0.2.2
 accounts-password
-accounts-ui-bootstrap-3
-fast-render
+mrt:accounts-ui-bootstrap-3@=0.3.0-1
 email
-kadira
+iron:router
+meteorhacks:kadira
+meteorhacks:fast-render
+
